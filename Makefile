@@ -7,5 +7,9 @@ install: requirements.txt
 run:
 	./venv/bin/python3 main.py	
 
+env: env.sh
+	. env.sh
+
 stop:
-	deactivate
+	@echo "stop venv"
+	. ./stop.sh

@@ -18,9 +18,15 @@ Example:
 ## VWAP:
     vwap = sum(num_shares * prices) / sum(total_shares)
 
-###example:
+### example:
     100 @ 10, 300 @ 8, 200 @ 11
     
     vwap = sum(100 * 10, 300 * 8, 200 * 11) / sum(100, 300, 200)
     print(vwap) // -> 9.33
+
+### activate virtual environment
+    . ./env.sh # the code in the file -> source venv/bin/activate
+
+### stop virtual environment
+    . ./stop.sh # the code in the file -> deactivate
     
